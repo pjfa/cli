@@ -11,7 +11,7 @@
         - "386"
       ldflags:
         - -s -w
-        - -X 'k8s.io/client-go/pkg/version.gitVersion={{.Version}}'
+        - -X 'k8s.io/client-go/pkg/version.gitVersion=v{{.Version}}'
         - -X 'k8s.io/client-go/pkg/version.gitCommit={{.Commit}}'
       hooks:
         post:
